@@ -15,6 +15,6 @@ class Test extends BaseController
 
     public function getLokasi()
     {
-        return "Lokasi anda di Focus Techno Media";
+        return view("lokasi");
     }
 }
