@@ -7,6 +7,7 @@ use CodeIgniter\HTTP\ResponseInterface;
 
 class Todo extends BaseController
 {
+    // Menampilkan semua data dalam tabel
     public function getIndex()
     {
         $todoModel = new \App\Models\Todo();
@@ -16,6 +17,8 @@ class Todo extends BaseController
         ];
         return view('todo/index', $data);
     }
+
+    // Menampilkan form untuk menambahkan data
     public function getNew()
     {
         $todoModel = new \App\Models\Todo();
@@ -25,6 +28,8 @@ class Todo extends BaseController
         ];
         return view('todo/form', $data);
     }
+
+    // Proses menambahkan data
     public function postCreate()
     {
         $data = $this->request->getPost();
@@ -33,6 +38,8 @@ class Todo extends BaseController
         session()->setFlashdata('success', 'Data berhasil disimpan');
         $this->response->redirect(site_url('todo'));
     }
+
+    // Menampilkan form untuk mengedit data
     public function getEdit($id)
     {
         $todoModel = new \App\Models\Todo();
@@ -42,6 +49,8 @@ class Todo extends BaseController
         ];
         return view('todo/form', $data);
     }
+
+    // Proses update data
     public function postUpdate($id)
     {
         $data = $this->request->getPost();
@@ -50,6 +59,8 @@ class Todo extends BaseController
         session()->setFlashdata('success', 'Data berhasil disimpan');
         $this->response->redirect(site_url('todo'));
     }
+
+    // Proses menghapus data
     public function postDelete($id)
     {
         $todoModel = new \App\Models\Todo();

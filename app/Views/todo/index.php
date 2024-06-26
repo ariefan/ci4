@@ -25,8 +25,7 @@
                 <?= $row->updated_at; ?>
             </td>
             <td>
-                <form method="post" action="<?= site_url('todo/delete/' .
-                                                $row->id); ?>">
+                <form method="post" action="<?= site_url('todo/delete/' . $row->id); ?>" onsubmit="return confirm('Apakah anda yakin akan menghapus data ini?')">
                     <div class="btn-group btn-group-sm" role="group">
                         <a href="<?= site_url('todo/edit/' . $row->id); ?>" class="btn btn-warning">edit</a>
                         <button type="submit" class="btn btn-danger">delete</button>
