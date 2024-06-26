@@ -25,7 +25,7 @@ class Todo extends Migration
                 'type' => 'DATETIME',
                 'null' => true,
             ],
-            'created_at' => [
+            'updated_at' => [
                 'type' => 'DATETIME',
                 'null' => true,
             ],
