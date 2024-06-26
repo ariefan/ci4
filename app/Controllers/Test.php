@@ -12,9 +12,4 @@ class Test extends BaseController
         ];
         return view("test", $data);
     }
-
-    public function getLokasi()
-    {
-        return view("lokasi");
-    }
 }
