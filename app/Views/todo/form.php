@@ -9,6 +9,11 @@
                                                                     $row->judul; ?>">
     </div>
     <div class="mb-3">
+        <label class="form-label">Kategori</label>
+        <input type="text" class="form-control" name="kategori" value="<?=
+                                                                        $row->kategori; ?>">
+    </div>
+    <div class="mb-3">
         <label class="form-label">Deskripsi</label>
         <input type="text" class="form-control" name="deskripsi" value="<?=
                                                                         $row->deskripsi; ?>">

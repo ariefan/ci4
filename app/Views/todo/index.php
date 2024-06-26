@@ -5,6 +5,7 @@
 <table class="table">
     <tr>
         <th scope="col">Judul</th>
+        <th scope="col">Kategori</th>
         <th scope="col">Deskripsi</th>
         <th scope="col">Tanggal Dibuat</th>
         <th scope="col">Tanggal diupdate</th>
@@ -15,6 +16,9 @@
             <th>
                 <?= $row->judul; ?>
             </th>
+            <td>
+                <?= $row->kategori; ?>
+            </td>
             <td>
                 <?= $row->deskripsi; ?>
             </td>
