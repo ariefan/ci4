@@ -1,0 +1,12 @@
+Framework: CodeIgniter 4
+CSS: Bootstrap 5
+
+Buatkan CRUD untuk menu peserta yang terdiri dari kolom:
+id, nama, alamat, tanggal_lahir
+
+View terdiri dari file index.php dan form.php yang diletakkan di dalam folder peserta.
+Layout diletakkan di Views/layout/app.php.
+Project sudah menggunakan autoroute improved.
+Method di controller adalah: getIndex(), getNew(), postCreate(), getEdit($id), postUpdate($id), postDelete($id).
+Nama modelnya adalah PesertaModel.php
+Tambahan tabel tidak menggunakan migration. 

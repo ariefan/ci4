@@ -17,6 +17,11 @@ class Todo extends Migration
                 'type' => 'VARCHAR',
                 'constraint' => '100',
             ],
+            'kategori' => [
+                'type' => 'VARCHAR',
+                'constraint' => '100',
+                'null' => true,
+            ],
             'deskripsi' => [
                 'type' => 'TEXT',
                 'null' => true,
