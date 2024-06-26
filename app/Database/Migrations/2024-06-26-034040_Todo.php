@@ -9,20 +9,20 @@ class Todo extends Migration
     public function up()
     {
         $this->forge->addField([
-            'todo_id' => [
+            'id' => [
                 'type' => 'INT',
                 'auto_increment' => true,
             ],
-            'todo_title' => [
+            'judul' => [
                 'type' => 'VARCHAR',
                 'constraint' => '100',
             ],
-            'todo_description' => [
+            'deskripsi' => [
                 'type' => 'TEXT',
                 'null' => true,
             ],
         ]);
-        $this->forge->addKey('todo_id', true);
+        $this->forge->addKey('id', true);
         $this->forge->createTable('todo');
     }
     public function down()
