@@ -29,7 +29,7 @@
                                                 $row->id); ?>">
                     <div class="btn-group btn-group-sm" role="group">
                         <a href="<?= site_url('todo/edit/' . $row->id); ?>" class="btn btn-warning">edit</a>
-                        <button type="submit" class="btn btndanger">delete</button>
+                        <button type="submit" class="btn btn-danger">delete</button>
                     </div>
                 </form>
             </td>
